@@ -1,0 +1,6 @@
+services:
+  example:
+    image: edbrxyz/chrome-kasa
+    environment:
+      chromecast: 'chromecast-friendly-name' #replace with the IP of your Kasa plug
+      kasa: xxx.xxx.xxx.xxx #replace with the IP of your Kasa plug
