@@ -27,7 +27,7 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 
 1. Copy the contents of the [example docker-compose.yml file](example-docker-compose.yml) into a folder of your choosing.
 2. Customise the environment, putting in the name of your Chromecast Audio, the IP of your smart plug, and (optionally) an idle timeout.
-3. Duplicate the service for as many plugs you need to control. (Optional)
+3. Duplicate the service for as many plugs you need to control. (optional)
 4. Run `docker compose up` and test it out.
 5. Run in the background with `docker compose up -d`.
 
