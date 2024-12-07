@@ -1,10 +1,10 @@
-:accordion: Silly little script that turns on a TP-Link smart plug when you connect to a Chromecast Audio. :accordion:
+ :whale: [`edbrxyz/chrome-kasa`](https://hub.docker.com/r/edbrxyz/chrome-kasa)
+
+**Silly little script that turns on a TP-Link smart plug when you are connected to a Chromecast Audio.**
 
 Turn an amplifier on and off automatically! (or set mood lighting?)
 
-Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast).
-
-I should make it use [pychromecast](https://github.com/home-assistant-libs/pychromecast), but I haven't yet.
+Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast). I should make it use [pychromecast](https://github.com/home-assistant-libs/pychromecast), but I haven't yet.
 
 ## Requirements:
 
