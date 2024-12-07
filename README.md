@@ -43,7 +43,7 @@ services:
 3. Run `docker compose up` and test it out.
 4. Run in the background with `docker compose up -d`.
 
-### Without Docker
+### Without Docker:
 
 1. Install [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast).
 
