@@ -49,5 +49,5 @@ services:
 
 2. Run the [python script](src/chrome-kasa.py) with the command:
 ```bash
-    python3 chrome-kasa.py '<Chromecast Friendly Name>' '<smart.plug.ip>' '<timeout in seconds (optional, default: 60)>'
+python3 chrome-kasa.py '<Chromecast Friendly Name>' '<smart.plug.ip>' '<timeout in seconds>'
 ```
