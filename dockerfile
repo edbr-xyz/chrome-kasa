@@ -13,7 +13,7 @@ ADD src/* .
 
 # Arguements for the python script
 ENV chromecast=default_chromecast_value
-ENV kasa=default_kasa_value
+ENV plug=default_kasa_value
 ENV idle=60
 
 # Don't run as root
@@ -21,4 +21,4 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
 # Run
-CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${kasa} ${idle}"]
+CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${plug} ${idle}"]
