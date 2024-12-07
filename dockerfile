@@ -12,8 +12,9 @@ ADD src/* .
 
 ENV chromecast=default_chromecast_value
 ENV kasa=default_kasa_value
+ENV idle=60
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
-CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${kasa}"]
+CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${kasa} ${idle}"]

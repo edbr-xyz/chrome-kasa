@@ -4,8 +4,8 @@ import sys
 def main():
     chromecast = sys.argv[1].replace('###space###', ' ')
     kasaPlug = sys.argv[2]
+    sleepTime = idle = int(sys.argv[3])
     print('Controlling Kasa plug at', kasaPlug, 'based on the status of', chromecast)
-    sleepTime = idle = 60
     ampStatus = "unknown"
     while True:
         if str.encode('"appType\\":\\"WEB\\"') in subprocess.Popen(['go-chromecast','status', '-n', chromecast, '-v'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()[0]:

@@ -4,3 +4,4 @@ services:
     environment:
       chromecast: 'chromecast-friendly-name' #replace with the IP of your Kasa plug
       kasa: xxx.xxx.xxx.xxx #replace with the IP of your Kasa plug
+      idle: 30 #set how long plug should stay turned on for, remove line to have default of 60
