@@ -51,3 +51,8 @@ services:
 ```bash
 python3 chrome-kasa.py '<Chromecast Friendly Name>' '<smart.plug.ip>' '<timeout in seconds>'
 ```
+
+## Running on non-ARM64 systems:
+
+1. Download the [Dockerfile](Dockerfile) and edit the install for [go-chromecast](https://github.com/vishen/go-chromecast) to use your [architecture's relevant release](https://github.com/vishen/go-chromecast/releases).
+2. Replace `image: edbrxyz/chrome-kasa` with `build: .` in your docker-compose.yml
