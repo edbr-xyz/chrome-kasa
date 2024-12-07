@@ -1,4 +1,5 @@
 services:
+  # Duplicate for as many smart plug + Chromecast Audios as you have
   example:
     image: edbrxyz/chrome-kasa
     network_mode: "host"
