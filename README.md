@@ -15,7 +15,7 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 
 ### Software:
 
-- [Docker](https://docs.docker.com/engine/install/) and the [Docker Compose plugin](https://docs.docker.com/compose/install/linux/#install-using-the-repository). :exclamation: **Image currently only built for ARM64.**
+- [Docker](https://docs.docker.com/engine/install/) and the [Docker Compose plugin](https://docs.docker.com/compose/install/linux/#install-using-the-repository). :exclamation: **Image currently built for ARM64 only.**
 
 *OR*
 
