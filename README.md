@@ -25,7 +25,7 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 
 ### With Docker (Recommended):
 
-1. Make a docker-compose.yml in a folder of your choosing, and paste in:
+1. Make a `docker-compose.yml` file in a folder of your choosing, and paste in:
 
 ```yaml
 services:
@@ -43,6 +43,11 @@ services:
 3. Run `docker compose up` and test it out.
 4. Run in the background with `docker compose up -d`.
 
+#### Running on non-ARM64 systems:
+
+1. Download the [dockerfile](dockerfile) and edit the install for [go-chromecast](https://github.com/vishen/go-chromecast) to use your [architecture's relevant release](https://github.com/vishen/go-chromecast/releases).
+2. Replace `image: edbrxyz/chrome-kasa` with `build: .` in your `docker-compose.yml`.
+
 ### Without Docker:
 
 1. Install [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast).
@@ -51,8 +56,3 @@ services:
 ```bash
 python3 chrome-kasa.py '<Chromecast Friendly Name>' '<smart.plug.ip>' '<timeout in seconds>'
 ```
-
-## Running on non-ARM64 systems:
-
-1. Download the [Dockerfile](Dockerfile) and edit the install for [go-chromecast](https://github.com/vishen/go-chromecast) to use your [architecture's relevant release](https://github.com/vishen/go-chromecast/releases).
-2. Replace `image: edbrxyz/chrome-kasa` with `build: .` in your docker-compose.yml
