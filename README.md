@@ -25,16 +25,29 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 
 ### With Docker (Recommended):
 
-1. Copy the contents of the [example docker-compose.yml file](example-docker-compose.yml) into a folder of your choosing.
-2. Customise the environment, putting in the name of your Chromecast Audio, the IP of your smart plug, and (optionally) an idle timeout.
-3. Duplicate the service for as many plugs you need to control. (optional)
-4. Run `docker compose up` and test it out.
-5. Run in the background with `docker compose up -d`.
+1. Make a docker-compose.yml in a folder of your choosing, and paste in:
+
+```yaml
+services:
+  # Duplicate for as many smart plug + Chromecast Audios as you have
+  example:
+    image: edbrxyz/chrome-kasa
+    network_mode: 'host'
+    environment:
+      chromecast: '<Chromecast Friendly Name>' #replace with the friendly name of your Chromecast Audio
+      plug: <smart.plug.ip> #replace with the IP of your smart plug
+      idle: <number of seconds> #set how long the smart plug should stay on for, or remove line for default 60
+```
+
+2. Customise the environment as described in the comments.
+3. Run `docker compose up` and test it out.
+4. Run in the background with `docker compose up -d`.
 
 ### Without Docker
 
 1. Install [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast).
 
-2. Run the [python script](src/chrome-kasa.py) with the command: ```python
-    python3 chrome-kasa.py '<chromecast-friendly-name>' <smart-plug-ip> <timeout in seconds (default: 60)>
+2. Run the [python script](src/chrome-kasa.py) with the command:
+```bash
+    python3 chrome-kasa.py '<Chromecast Friendly Name>' '<smart.plug.ip>' '<timeout in seconds (optional, default: 60)>'
 ```
