@@ -36,7 +36,7 @@ services:
     environment:
       chromecast: '<Chromecast Friendly Name>' #replace with the friendly name of your Chromecast Audio
       plug: <smart.plug.ip> #replace with the IP of your smart plug
-      idle: <number of seconds> #set how long the smart plug should stay on for, or remove line for default 60
+      idle: <timeout in seconds> #set how long the smart plug should stay on for, or remove line for default 60
 ```
 
 2. Customise the environment as described in the comments.
