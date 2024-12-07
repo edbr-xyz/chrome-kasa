@@ -16,4 +16,4 @@ ENV kasa=default_kasa_value
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
-CMD ["sh", "-c", "python3 -u kasa-chromecast.py ${chromecast// /###space###} ${kasa}"]
+CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${kasa}"]
