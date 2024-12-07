@@ -11,7 +11,7 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 ### Hardware:
 
  - :sound:  Chromecast Audio
- - :electric_plug:  TP-Link Kasa or Tapo Smart Plug from [this list](https://github.com/python-kasa/python-kasa?tab=readme-ov-file#supported-kasa-devices), configured with a static IP address.
+ - :electric_plug:  TP-Link Kasa or Tapo smart plug from [this list](https://github.com/python-kasa/python-kasa?tab=readme-ov-file#supported-kasa-devices), configured with a static IP address.
 
 ### Software:
 
