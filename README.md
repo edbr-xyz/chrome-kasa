@@ -35,4 +35,4 @@ Uses [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecas
 
 1. Install [python-kasa](https://github.com/python-kasa/python-kasa) and [go-chromecast](https://github.com/vishen/go-chromecast).
 
-2. Run the [python script](src/chrome-kasa.py) with the command: `python3 chrome-kasa.py 'chromecast-friendly-name' xxx.xxx.xxx.xxx`, replacing 'chromecast-friendly-name' with your Chromecast Audio's friendly name, and xxx.xxx.xxx.xxx with the IP of your smart plug.
+2. Run the [python script](src/chrome-kasa.py) with the command: `python3 chrome-kasa.py '<chromecast-friendly-name>' <smart-plug-ip> <timeout in seconds (default: 60)>`
