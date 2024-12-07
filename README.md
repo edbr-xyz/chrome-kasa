@@ -1,4 +1,4 @@
- :whale: [`edbrxyz/chrome-kasa`](https://hub.docker.com/r/edbrxyz/chrome-kasa)
+:whale: [`edbrxyz/chrome-kasa`](https://hub.docker.com/r/edbrxyz/chrome-kasa)
 
 **Silly little script that turns on a TP-Link smart plug when you are connected to a Chromecast Audio.**
 
