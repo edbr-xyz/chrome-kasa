@@ -14,11 +14,12 @@ RUN pip install python-kasa --break-system-packages --no-cache-dir
 ADD src/* .
 
 # Arguements for the python script
-ENV chromecast=default_chromecast_value \
+ENV script=chrome-kasa.py \
+    chromecast=default_chromecast_value \
     plug=default_kasa_value \
     idle=60
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
-CMD ["sh", "-c", "python3 -u chrome-kasa.py ${chromecast// /###space###} ${plug} ${idle}"]
+CMD ["sh", "-c", "python3 -u ${script} ${chromecast// /###space###} ${plug} ${idle}"]
