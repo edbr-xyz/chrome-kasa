@@ -10,7 +10,7 @@ def main():
         while True:
             goStatus = str(subprocess.Popen(['go-chromecast','status', '-n', chromecast, '-v'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()[0])
             if '(PLAYING)' in goStatus or '(BUFFERING)' in goStatus:
-                if r'mediaCategory\\":\\"AUDIO' not in goStatus and int(''.join(filter(str.isdigit, goStatus.split('/')[-1].split('s')[0]))) > minLength:
+                if 'mediaCategory\\":\\"AUDIO' not in goStatus and int(''.join(filter(str.isdigit, goStatus.split('/')[-1].split('s')[0]))) > minLength:
                      tvIdle = 0
                      if plugStatus != 'off':
                         subprocess.run(["kasa", "--type", "plug", "--host", kasaPlug, "off"])
